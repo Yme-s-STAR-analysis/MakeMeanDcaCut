@@ -38,12 +38,12 @@ void plot() {
     lat->SetTextAlign(22);
 
     const char* sname = "dca_cuts.pdf";
-    double nsig = 5;
+    double nsig = 6;
 
 
     c->Clear();
     c->cd();
-    lat->DrawLatexNDC(0.5, 0.5, "14.6 GeV mean DCAz/xy cut");
+    lat->DrawLatexNDC(0.5, 0.5, "DATASET GeV mean DCAz/xy cut");
     c->Print(Form("%s(", sname));
 
     c->Clear();
@@ -78,7 +78,7 @@ void plot() {
     tpz->Draw("epsame");
     lat->SetTextAlign(11);
     lat->DrawLatexNDC(0.7, 0.8, "STAR BES-II");
-    lat->DrawLatexNDC(0.7, 0.7, "Au+Au @ 14.6 GeV");
+    lat->DrawLatexNDC(0.7, 0.7, "Au+Au @ DATASET GeV");
     for (int i=0; i<np; i++) {
         mean[i] = tpz->GetBinContent(i+1);
         sig[i] = tpz->GetBinError(i+1);
@@ -125,7 +125,7 @@ void plot() {
     tpxy->Draw("epsame");
     lat->SetTextAlign(11);
     lat->DrawLatexNDC(0.7, 0.8, "STAR BES-II");
-    lat->DrawLatexNDC(0.7, 0.7, "Au+Au @ 14.6 GeV");
+    lat->DrawLatexNDC(0.7, 0.7, "Au+Au @ DATASET GeV");
     for (int i=0; i<np; i++) {
         mean[i] = tpxy->GetBinContent(i+1);
         sig[i] = tpxy->GetBinError(i+1);
