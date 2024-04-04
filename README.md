@@ -8,6 +8,10 @@ date: 29.11.2023
 
 ## Patch note
 
+04.04.2024 by yghuang (v2.1.1):
+
+> Plot: Y-axis' title is now with s for signed
+
 03.04.2024 by yghuang (v2.1):
 
 > Plot:
