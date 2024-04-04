@@ -73,6 +73,7 @@ void plot() {
     gPad->SetLogy(false);
     gPad->SetLogz();
     h2z->GetYaxis()->SetRangeUser(-3, 3);
+    h2z->SetTitle(";RefMult;<sDCAz> [cm]");
     h2z->Draw("col");
     tpz->BuildOptions(0, 0, "s");
     tpz->Draw("epsame");
@@ -120,6 +121,7 @@ void plot() {
     gPad->SetLogy(false);
     gPad->SetLogz();
     h2xy->GetYaxis()->SetRangeUser(-3, 3);
+    h2xy->SetTitle(";RefMult;<sDCAxy> [cm]");
     h2xy->Draw("col");
     tpxy->BuildOptions(0, 0, "s");
     tpxy->Draw("epsame");
